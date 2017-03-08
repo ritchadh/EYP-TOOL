@@ -8,11 +8,13 @@ import { HeaderBrandingComponent } from './components/header/header-branding/hea
 import { HeaderNotificationComponent } from './components/header/header-notification/header-notification.component';
 import { HeaderUserComponent } from './components/header/header-user/header-user.component';
 import { HeaderFileComponent } from './components/header/header-file/header-file.component';
+import { UttamComponent } from './uttam/uttam.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [HeaderComponent, FooterComponent, NavbarComponent, ToArrayPipe, HeaderBrandingComponent, HeaderNotificationComponent, HeaderUserComponent, HeaderFileComponent]
+  declarations: [HeaderComponent, FooterComponent, NavbarComponent, ToArrayPipe, HeaderBrandingComponent, HeaderNotificationComponent, HeaderUserComponent, HeaderFileComponent, UttamComponent],
+  exports:[HeaderComponent, FooterComponent, NavbarComponent, ToArrayPipe, HeaderBrandingComponent, HeaderNotificationComponent, HeaderUserComponent, HeaderFileComponent]
 })
 export class SharedModule { }
